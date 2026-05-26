@@ -67,7 +67,9 @@ export default function SignInPage() {
       <div
         style={{
           width: "100%",
-          maxWidth: 420,
+          maxWidth: 520,
+          boxSizing: "border-box",
+          minWidth: 0,
           border: "1px solid #1a1a1a",
           borderRadius: 12,
           padding: "clamp(28px,5vw,48px) clamp(24px,5vw,40px)",
@@ -94,18 +96,22 @@ export default function SignInPage() {
           </span>
         </div>
 
-        <h1
-          style={{
-            fontFamily: DISP,
-            fontWeight: 800,
-            fontSize: "clamp(34px,6vw,52px)",
-            letterSpacing: "-0.04em",
-            lineHeight: 0.95,
-            color: "#e8e8e8",
-            margin: "0 0 16px",
-          }}
+        <h1 style={{
+          fontFamily: DISP,
+          fontWeight: 800,
+          fontSize: "clamp(18px, 4vw, 42px)",
+
+          lineHeight: 1,
+          letterSpacing: "-0.01em",
+
+          color: "#e8e8e8",
+          margin: "0 0 16px",
+          textAlign: "center",
+          width: "100%",
+        }}
         >
-          WELCOME<br />
+          WELCOME
+          <br />
           <span style={{ color: A }}>BACK.</span>
         </h1>
 
